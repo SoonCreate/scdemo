@@ -15,9 +15,13 @@
 //            parseOnLoad: true,
             async : true,
             packages: [
-                { name: "local", location: "/scdemo/resources/js/"}
+                { name: "local", location: "/scdemo/resources/js"},
+                { name: "echarts", location: "/echarts/dist"}
+            ],
+            aliases : [
+                ['jquery', 'jquery-1.11.2.min.js']
             ]
-        }
+        };
         function url(s){
             var ciBaseUrl = "<?= base_url()?>";
             return ciBaseUrl + s;
@@ -25,6 +29,7 @@
 
     </script>
     <script src="../dojo/dojo/dojo.js"></script>
+<!--    <script src="../echarts/dist/echarts-all.js"></script>-->
 
     <script type="text/javascript" src="resources/js/src.js" charset="utf-8"></script>
     <script type="text/javascript" src="resources/js/message.js" charset="utf-8"></script>

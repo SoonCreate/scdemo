@@ -13,4 +13,8 @@ class Chart extends CI_Controller {
     function geo_charting(){
         render_with_source_code('geo_charting_demo');
     }
+
+    function eCharts_map(){
+        render_with_source_code('echarts_map_demo');
+    }
 }
